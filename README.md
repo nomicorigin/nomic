@@ -1,1 +1,2 @@
 # nomic
+by Peter Suber
