@@ -5,18 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Nomic Network</title>
     <script src="dontChangeWhatsInMe/nomicSiteFiles/javascripts/jquery-3.4.1.min.js" charset="utf-8"></script>
-    <script>
-    $(function(){
-      $("#nomic-target").load("changeWhatsInMe/nomicHtml/nomic.html");
-      $("#nomic-description-target").load("changeWhatsInMe/nomicHtml/nomic_description.html");
-    });
-    </script>
+    <script src="dontChangeWhatsInMe/nomicSiteFiles/javascripts/import.js" charset="utf-8"></script>
+    <script src="dontChangeWhatsInMe/nomicSiteFiles/javascripts/nomic.js" charset="utf-8"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="dontChangeWhatsInMe/nomicSiteFiles/stylesheets/nomic.css">
   </head>
   <body>
     <div class="header">
       <div class="nav-container-top-left">
-        <a class="logo" href="#">Nomic<span></span></a> <a class="nav-link" href="#">rules</a> <a class="nav-link" href="#">description</a>
+        <a id="nomic-logo" class="logo" href="#">Nomic<span></span></a>
+        <a id="rules-nav-link" class="nav-link" href="#">rules</a>
+        <a id="desc-nav-link" class="nav-link" href="#">description</a>
       </div>
       <div class="nav-container-top-right">
         <div class="nav-button help-toggle-button"></div>
