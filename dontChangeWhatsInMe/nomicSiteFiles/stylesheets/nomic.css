@@ -1,0 +1,77 @@
+/* -------------------- CSS for all screens ------------------- */
+body {
+  margin: 0;
+}
+.header {
+  height: 50px;
+  width: 100%;
+  background-color: rgba(64,64,64,0.5);
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.nav-container-top-left {
+}
+.full-screen-modal {
+}
+.full-screen-modal.hidden {
+  display: none;
+}
+.pane-left {
+  background-color: #cff;
+}
+.pane-right {
+  background-color: #cfc;
+}
+.pane-container {
+  padding: 0 20px;
+}
+.markdown-container {
+  background-color: rgba(255,255,255,0.5);
+}
+/* ---------------- End of CSS for all screens ---------------- */
+
+/* -------------- CSS for screens 800px or larger ------------- */
+@media screen and (min-width:800px) {
+  .pane {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    top: 0;
+  }
+  .pane-left {
+    left: 0;
+    background-color: #cff;
+  }
+  .pane-left2 {
+    left: -50%;
+    background-color: #fcc;
+  }
+  .pane-right {
+    right: 0;
+    background-color: #cfc;
+  }
+  .pane-container {
+    margin-top: 50px;
+    padding: 0 20px;
+  }
+}
+/* ---------- End of CSS for screens 800px or larger ---------- */
+
+/* ------------ CSS for screens smaller than 800px ------------ */
+@media screen and (max-width:799.98px) {
+  .main-container {
+    top: 0;
+  }
+  .pane {
+    width: 100%;
+  }
+  .pane-left {
+    min-height: 100vh;
+  }
+  .pane-left .pane-container {
+    padding-top: 50px;
+  }
+}
+/* --------- End of CSS for screens smaller than 800px -------- */
