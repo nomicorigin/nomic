@@ -21,6 +21,9 @@ body {
 .pane-left {
   background-color: #cff;
 }
+.pane-left2 {
+  background-color: #fcc;
+}
 .pane-right {
   background-color: #cfc;
 }
@@ -28,6 +31,7 @@ body {
   padding: 0 20px;
 }
 .markdown-container {
+  padding: 1px 0;
   background-color: rgba(255,255,255,0.5);
 }
 /* ---------------- End of CSS for all screens ---------------- */
@@ -39,14 +43,13 @@ body {
     width: 50%;
     position: fixed;
     top: 0;
+    overflow-y: scroll;
   }
   .pane-left {
     left: 0;
-    background-color: #cff;
   }
   .pane-left2 {
     left: -50%;
-    background-color: #fcc;
   }
   .pane-right {
     right: 0;

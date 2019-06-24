@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Nomic Network</title>
     <script src="dontChangeWhatsInMe/nomicSiteFiles/javascripts/jquery-3.4.1.min.js" charset="utf-8"></script>
+    <script>
+    $(function(){
+      $("#nomic-target").load("changeWhatsInMe/nomicHtml/nomic.html");
+      $("#nomic-description-target").load("changeWhatsInMe/nomicHtml/nomic_description.html");
+    });
+    </script>
     <link rel="stylesheet" type="text/css" media="screen" href="dontChangeWhatsInMe/nomicSiteFiles/stylesheets/nomic.css">
   </head>
   <body>
     <div class="header">
       <div class="nav-container-top-left">
-        <a class="logo" href="#">Nomic</a> <a class="nav-link" href="#">rules</a> <a class="nav-link" href="#">description</a>
+        <a class="logo" href="#">Nomic<span></span></a> <a class="nav-link" href="#">rules</a> <a class="nav-link" href="#">description</a>
       </div>
       <div class="nav-container-top-right">
         <div class="nav-button help-toggle-button"></div>
@@ -22,15 +28,46 @@
     <div class="main-container">
       <div id="nomic" class="pane pane-left">
         <div class="pane-container">
-          <div class="markdown-container">
-            md-generated nomic html
+          <div id="nomic-placeholder" class="markdown-container">
+            <h1 id="nomic">Nomic</h1>
+            <h2 id="initial-set-of-rules">Initial Set of Rules</h2>
+            <h3 id="immutable-rules"><em>Immutable Rules</em></h3>
+            <p><strong>101.</strong> All players must always abide by all the rules then in effect, in the form in which they are then in effect. The rules in the Initial Set are in effect whenever a game begins. The Initial Set consists of Rules 101-116 (immutable) and 201-213 (mutable).</p>
+            <p><strong>102.</strong> Initially rules in the 100&#39;s are immutable and rules in the 200&#39;s are mutable. Rules subsequently enacted or transmuted (that is, changed from immutable to mutable or vice versa) may be immutable or mutable regardless of their numbers, and rules in the Initial Set may be transmuted regardless of their numbers.</p>
+            <p><strong>103.</strong> A rule-change is any of the following: (1) the enactment, repeal, or amendment of a mutable rule; (2) the enactment, repeal, or amendment of an amendment of a mutable rule; or (3) the transmutation of an immutable rule into a mutable rule or vice versa.</p>
+            <p>(Note: This definition implies that, at least initially, all new rules are mutable; immutable rules, as long as they are immutable, may not be amended or repealed; mutable rules, as long as they are mutable, may be amended or repealed; any rule of any status may be transmuted; no rule is absolutely immune to change.)</p>
+            <p><strong>104.</strong> All rule-changes proposed in the proper way shall be voted on. They will be adopted if and only if they receive the required number of votes.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p><strong>116.</strong> Whatever is not prohibited or regulated by a rule is permitted and unregulated, with the sole exception of changing the rules, which is permitted only when a rule or set of rules explicitly or implicitly permits it.</p>
+            <h3 id="mutable-rules"><em>Mutable Rules</em></h3>
+            <p><strong>201.</strong> Players shall alternate in clockwise order, taking one whole turn apiece. Turns may not be skipped or passed, and parts of turns may not be omitted. All players begin with zero points.</p>
+            <p>In mail and computer games, players shall alternate in alphabetical order by surname.</p>
+            <p><strong>202.</strong> One turn consists of two parts in this order: (1) proposing one rule-change and having it voted on, and (2) throwing one die once and adding the number of points on its face to one&#39;s score.</p>
+            <p>In mail and computer games, instead of throwing a die, players subtract 291 from the ordinal number of their proposal and multiply the result by the fraction of favorable votes it received, rounded to the nearest integer. (This yields a number between 0 and 10 for the first player, with the upper limit increasing by one each turn; more points are awarded for more popular proposals.)</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p><strong>213.</strong> If the rules are changed so that further play is impossible, or if the legality of a move cannot be determined with finality, or if by the Judge&#39;s best reasoning, not overruled, a move appears equally legal and illegal, then the first player unable to complete a turn is the winner.</p>
+            <p>This rule takes precedence over every other rule determining the winner.</p>
+          </div>
+          <div id="nomic-target" class="markdown-container">
           </div>
         </div>
       </div>
       <div id="nomic-desc" class="pane pane-left2">
         <div class="pane-container">
-          <div class="markdown-container">
-            md-generated nomic DESCRIPTION html
+          <div id="nomic-description-placeholder" class="markdown-container">
+            <h1 id="foreword">Foreword</h1>
+            <p>Nomic is a game invented by Peter Singer. NomicOrigin is a meta-game invented by Davis Allen.</p>
+            <h1 id="nomic-a-game-of-self-amendment">Nomic: A Game of Self-Amendment</h1>
+            <h2 id="aintroduction">A.Introduction</h2>
+            <p>If law-making is a game, then it is a game in which changing the rules is a move. Law-making is more than changing the rules of law-making, of course, and more than a game. But a real game may model the self-amending character of the legal system and leave the rest out. While self-amendment appears to be an esoteric feature of law, capturing it in a game creates a remarkably complete microcosm of a functional legal system.</p>
+            <p>Statutes are the paradigm legal rules. Statutes are made by a rule-governed process that is itself partly statutory. Hence the power to make and change statutes can reach some of the rules that govern the process itself. Most of the rules that govern the making of statutes, however, are constitutional and beyond the reach of the power they govern. Congress can change its parliamentary rules, committee structure, and revocably bind its future action by its past action, but through mere statutes it cannot alter the supermajority needed to override an executive veto, abolish one of its houses, start a tax bill in the Senate, or even delegate too much of its power to experts.</p>
+            <p>Statutes cannot affect constitutional rules, but the latter can affect the former. This is an important difference of logical priority. When a conflict exists between rules of different types, the constitutional rules always prevail. This logical difference is matched by a political difference: the logically prior (constitutional) rules are more difficult to amend than the logically posterior (statutory) rules. That these two differences occur together is not accidental. One purpose of making some rules more difficult to change than others is to prevent a brief wave of fanaticism from undoing decades or centuries of refined structure. It is self-paternalism, our chosen insurance against our anticipated weak moments. But that purpose is not met unless the two-tier (or multi-tier) system also creates a logical hierarchy in which the less mutable rules take logical priority over the more mutable rules. Otherwise the more mutable rules could by themselves undo basic patterns. If supermajorities and the concurrence of many bodies are necessary to protect the foundations of the system from hasty change, then that protective purpose is frustrated if those foundations are reachable by rules that require only a simple majority of a single legislature. [Note 2]</p>
+          </div>
+          <div id="nomic-description-target" class="markdown-container">
           </div>
         </div>
       </div>
