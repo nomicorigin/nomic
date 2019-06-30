@@ -35,6 +35,10 @@ body {
   display: flex;
 }
 
+.nav-link.selected {
+  font-weight: bold;
+}
+
 .logo {
   height: 64px;
   padding-left: 16px;
@@ -80,13 +84,23 @@ body {
     border-right: 1px solid #ccc;
   }
   .pane-left.displayed { left: 0; }
-  .pane-left.hidden { left: -50%; }
+  .pane-left.hidden {}
   .pane-left2 {
     left: -50%;
     border-right: 1px solid #ccc;
   }
-  .pane-left2.displayed { left: 0; }
-  .pane-left2.hidden { left: -50%; }
+  .pane-left2.displayed {
+    left: 0;
+    animation-duration: 0.5s;
+    animation-name: slideInFromLeft;
+    animation-iteration-count: 1;
+  }
+  .pane-left2.hidden {
+    left: -50%;
+    animation-duration: 0.5s;
+    animation-name: slideOutToLeft;
+    animation-iteration-count: 1;
+  }
 .pane-right {
     right: -50%;
     background-color: #cfc;
@@ -95,6 +109,30 @@ body {
     margin-top: 64px;
     padding: 0 20px;
   }
+}
+.pane-right.displayed {
+  right: 0;
+  animation: slideInFromRight 0.5s ease 0s 1
+}
+.pane-right.hidden {
+  right: -50%;
+  animation: slideOutToRight 0.5s ease 0s 1
+}
+@keyframes slideInFromLeft {
+  from { left: -50%; }
+  to { left: 0; }
+}
+@keyframes slideOutToLeft {
+  from { left: 0; }
+  to { left: -50%; }
+}
+@keyframes slideInFromRight {
+  from { right: -50%; }
+  to { right: 0; }
+}
+  @keyframes slideOutToRight {
+  from { right: 0; }
+  to { right: -50%; }
 }
 /* ---------- End of CSS for screens 992px or larger ---------- */
 
