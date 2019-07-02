@@ -1,4 +1,4 @@
-# Foreword
+# Foreword (MARKDOWN)
 
 Nomic is a game invented by Peter Singer. NomicOrigin is a meta-game invented by Davis Allen.
 
