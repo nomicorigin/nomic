@@ -1,4 +1,4 @@
-# Nomic (MARKDOWN)
+# Nomic
 
 ## Initial Set of Rules
 
